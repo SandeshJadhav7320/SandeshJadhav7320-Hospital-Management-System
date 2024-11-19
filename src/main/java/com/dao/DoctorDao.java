@@ -1,3 +1,4 @@
+
 package com.dao;
 
 import java.sql.Connection;
@@ -170,36 +171,36 @@ public class DoctorDao
 //		
 //	}
 //	
-//	public Doctor login(String email,String pass)
-//	{
-//		Doctor d=null;
-//		try
-//		{
-//			String sql="select * from doctor where email=? and password=?";
-//			PreparedStatement ps=conn.prepareStatement(sql);
-//			ps.setString(1,email);
-//			ps.setString(2,pass);
-//			
-//			ResultSet rs=ps.executeQuery();
-//			
-//			while(rs.next())
-//			{
-//				d=new Doctor();
-//				d.setId(rs.getInt(1));
-//				d.setFullname(rs.getString(2));
-//				d.setDob(rs.getString(3));
-//				d.setQualification(rs.getString(4));
-//				d.setSpecialist(rs.getString(5));
-//				d.setEmail(rs.getString(6));
-//				d.setNumber(rs.getString(7));
-//				d.setPassword(rs.getString(8));
-//			}
-//		}
-//		catch(Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//		return d;
-//		
-//	}
+	public Doctor login(String email,String pass)
+	{
+		Doctor d=null;
+		try
+		{
+			String sql="select * from doctor where email=? and password=?";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1,email);
+			ps.setString(2,pass);
+			
+			ResultSet rs=ps.executeQuery();
+			
+			while(rs.next())
+			{
+				d=new Doctor();
+				d.setId(rs.getInt(1));
+				d.setFullname(rs.getString(2));
+				d.setDob(rs.getString(3));
+				d.setQualification(rs.getString(4));
+				d.setSpecialist(rs.getString(5));
+				d.setEmail(rs.getString(6));
+				d.setNumber(rs.getString(7));
+				d.setPassword(rs.getString(8));
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return d;
+		
+	}
 }
