@@ -20,7 +20,7 @@
 	        <a class="nav-link" href="Doctor_Login_page.jsp">Doctor</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="appointement.jsp">Appointment</a>
+	        <a class="nav-link" href="UserAppointment.jsp">Appointment</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="user_login_page.jsp">User</a>
@@ -31,11 +31,11 @@
       
       <c:if test="${not empty userObj}">
       	 <li class="nav-item">
-        <a class="nav-link" href="appointement.jsp">Appointment</a>
+        <a class="nav-link" href="UserAppointment.jsp">Appointment</a>
       </li>
       
        <li class="nav-item">
-        <a class="nav-link" href="appointement.jsp">View Appointment</a>
+        <a class="nav-link" href="ViewAppointment.jsp">View Appointment</a>
       </li>
       
 		<div class="dropdown">

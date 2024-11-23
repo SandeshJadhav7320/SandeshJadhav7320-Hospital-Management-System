@@ -83,38 +83,38 @@ public class DoctorDao
 		
 	}
 	
-//	public Doctor getDoctorById(int id)
-//	{
-//		Doctor d1=null;
-//		try
-//		{
-//			String sql="select * from doctor where id=?";
-//			
-//			PreparedStatement ps=conn.prepareStatement(sql);
-//			ps.setInt(1,id);
-//			ResultSet rs=ps.executeQuery();
-//			while(rs.next())
-//			{
-//				d1=new Doctor();
-//				d1.setId(rs.getInt(1));
-//				d1.setFullname(rs.getString(2));
-//				d1.setDob(rs.getString(3));
-//				d1.setQualification(rs.getString(4));
-//				d1.setSpecialist(rs.getString(5));
-//				d1.setEmail(rs.getString(6));
-//				d1.setNumber(rs.getString(7));
-//				d1.setPassword(rs.getString(8));
-//			}
-//		}
-//		catch(Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//		
-//		return d1;
-//		
-//		
-//	}
+	public Doctor getDoctorById(int id)
+	{
+		Doctor d1=null;
+		try
+		{
+			String sql="select * from doctor where id=?";
+			
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setInt(1,id);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				d1=new Doctor();
+				d1.setId(rs.getInt(1));
+				d1.setFullname(rs.getString(2));
+				d1.setDob(rs.getString(3));
+				d1.setQualification(rs.getString(4));
+				d1.setSpecialist(rs.getString(5));
+				d1.setEmail(rs.getString(6));
+				d1.setNumber(rs.getString(7));
+				d1.setPassword(rs.getString(8));
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return d1;
+		
+		
+	}
 	
 //	public boolean doctorUpdate(Doctor d)
 //	{
