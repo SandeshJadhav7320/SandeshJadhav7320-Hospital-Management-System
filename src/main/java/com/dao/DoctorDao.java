@@ -148,29 +148,29 @@ public class DoctorDao
 //		return f;
 //	}
 	
-//	public boolean deleteDoctor(int id)
-//	{
-//		boolean f=false;
-//		try
-//		{
-//			String sql="delete from doctor where id=?";
-//			PreparedStatement ps=conn.prepareStatement(sql);
-//			ps.setInt(1,id);
-//			
-//			int i=ps.executeUpdate();
-//			if(i==1)
-//			{
-//				f=true;
-//			}
-//		}
-//		catch(Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//		return false;
-//		
-//	}
-//	
+	public boolean deleteDoctor(int id)
+	{
+		boolean f=false;
+		try
+		{
+			String sql="delete from doctor where id=?";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setInt(1,id);
+			
+			int i=ps.executeUpdate();
+			if(i==1)
+			{
+				f=true;
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+	
 	public Doctor login(String email,String pass)
 	{
 		Doctor d=null;

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.entity.SpecialistEntity;
+//import com.mysql.cj.xdevapi.Result;
 
 public class SpecialistDao 
 {
@@ -71,4 +72,3 @@ public class SpecialistDao
 	}
 	
 }
- 
