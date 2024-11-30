@@ -16,7 +16,7 @@
         <a class="nav-link" href="doctor.jsp">Doctor</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="appointement.jsp">Patient</a>
+        <a class="nav-link" href="patient.jsp">Patient</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="viewdoctor.jsp">View Doctor</a>
